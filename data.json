@@ -1,0 +1,80 @@
+[
+    {
+        "type": "train",
+
+        "train_data":[
+
+            {
+                "system_data":{
+
+                    "busdata":"matrix from excel with fault columns ommited",
+                    "linedata": "matrix from excel",
+                    "busdata_labels": "list of column names",
+                    "linedata_labels": "list of column names"
+                },  
+
+            "solution":{
+                    "Y_bus matrix": "matrix what we got from load flow",
+                    "line_power_flow_matrix": "output from load flow",
+                    "power_flow_solution": "output from load flow"
+                },
+
+            "labels": {
+
+                    "is_fault":"boolean true or false",
+                    "fault_type":"SLG, LL, 3 phase etc",
+                    "fault_bus": "number",
+                    "power_quality_type":"sag/swell",
+                    "harmonics":""
+                }
+            
+            },
+            
+            {"second training data":2}, 
+            
+            {"third training data":3}
+        ] 
+
+    },
+
+
+    {
+        "type": "test",
+
+        "test_data":[
+
+            {
+                "system_data":{
+
+                    "busdata":"matrix from excel but will be different columns , there will be no mention of faults",
+                    "linedata": "matrix from excel but will be different columns",
+                    "busdata_labels": "list of column names",
+                    "linedata_labels": "list of column names"
+                },  
+
+            "solution":{
+
+                    "Y_bus matrix": "matrix what we got from load flow",
+                    "line_power_flow_matrix": "output from load flow",
+                    "power_flow_solution": "output from load flow"
+                },
+
+            "labels": {
+
+                    "is_fault":"boolean true or false",
+                    "fault_type":"SLG, LL, 3 phase etc",
+                    "fault_bus": "number",
+                    "power_quality_type":"sag/swell",
+                    "harmonics":""
+                }
+            
+            },
+            
+            {"second test data":2}, 
+            
+            {"third test data":3}
+        ] 
+
+    }
+
+]
