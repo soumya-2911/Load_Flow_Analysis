@@ -1,12 +1,12 @@
-******Load_Flow_Analysis******
+# Load_Flow_Analysis
 
 Used Newton Raphson and Extended Kalman Filter to make a Real time Model of power system. Each of these are tested separately contained in the folder.
 
-**Final Main File of State Estimator**
+# Final Main File of State Estimator
 
 state_estimator.ipynb
 
-**sag_train.json**
+# sag_train.json
 
 1) format: JSON Object { dataset, 
 			            Angles, 
@@ -29,7 +29,7 @@ state_estimator.ipynb
 8) Similar format for swell_train.json, normal_train.json
 
 
-**bus_data.json**
+# bus_data.json
 
 1) Format: JSON Object {Column Name,
             			Data
@@ -51,7 +51,7 @@ state_estimator.ipynb
 3) Data is an array containing each rows. If there is 20 lines, there are 20 rows
 
 
-**Bus labels**
+# Bus labels
 
 1) Bus number
     A unique integer identifier for the bus (1–14).
@@ -84,7 +84,7 @@ state_estimator.ipynb
     Reactive power load demand at the bus.
 
 
-**Line Labels**
+# Line Labels
 
 1) From
 2) To
@@ -94,7 +94,7 @@ state_estimator.ipynb
 6) tap
 
 
-**z_k**
+# z_k
 
 14 bus voltage magnitudes (|V|)
 
