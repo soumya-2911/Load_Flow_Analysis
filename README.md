@@ -6,11 +6,11 @@ state_estimator.ipynb
 
 **sag_train.json**
 
-1) format: [dataset, 
-            Angles, 
-            List of Faulty Busses, 
-            Fault_Type, 
-            Scale]
+1) format: JSON Object { dataset, 
+			            Angles, 
+			            List of Faulty Busses, 
+			            Fault_Type, 
+			            Scale }
 
 2) dataset is the array of size num of train data each containing Z_k during a fault.
 
@@ -29,9 +29,9 @@ state_estimator.ipynb
 
 **bus_data.json**
 
-1) Format: [Column Name,
-            Data
-            ]
+1) Format: JSON Object {Column Name,
+            			Data
+            			}
 
 2) Column_Name is an Array containing the Name of Columns
 
@@ -40,9 +40,9 @@ state_estimator.ipynb
 
 **line_data.json**
 
-1) Format: [Column Name,
-            Data
-            ]
+1) Format: JSON Object {Column Name,
+			            Data
+			            }
 
 2) Column_Name is an Array containing the Name of Columns
 
