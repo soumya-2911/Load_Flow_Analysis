@@ -1,7 +1,6 @@
 """
 Extended-Kalman-Filter State Estimator for the IEEE-14-Bus System
 ----------------------------------------------------------------
-© 2025  (MIT-licensed for academic use)
 
 Replace the sample arrays with your own CSV or JSON data:
     bus_data  : 14×8  – see IEEE bus format
